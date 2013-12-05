@@ -1,6 +1,6 @@
 # GitHub Downloader
 
-This is a basic app that utlizes the Joomla! GitHub package to get tagged versions for a given repo,
+This is a basic app that utilizes the Joomla! GitHub package to get tagged versions for a given repo,
 and provides download links and statistics for the number of downloads through the application.
 
 ## Installation
