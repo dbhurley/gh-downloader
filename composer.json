@@ -1,0 +1,13 @@
+{
+    "name" : "GitHub Downloader",
+    "require": {
+        "joomla/framework": "~1.0",
+        "joomla/github": "~1.0",
+        "league/plates": "~1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "GHDownloader": "src"
+        }
+    }
+}
