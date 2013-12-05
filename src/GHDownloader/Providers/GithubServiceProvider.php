@@ -22,7 +22,14 @@ class GithubServiceProvider implements ServiceProviderInterface
 			"github",
 			function () use ($container)
 			{
-				return new Github;
+				$githubConfig = $container->get('config')->get('github');
+
+				$github = new Github;
+
+				$github->setOption('user', $githubConfig->user);
+				$github->setOption('repo', $githubConfig->repo);
+
+				return $github;
 			}
 		);
 	}
