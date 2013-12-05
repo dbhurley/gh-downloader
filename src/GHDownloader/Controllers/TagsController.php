@@ -8,8 +8,9 @@ class TagsController extends DefaultController
 	{
 		/** @var \Joomla\Github\Github $github */
 		$github = $this->container->get('github');
+		$config = $this->container->get('config');
 
-		$tags = $github->repositories->getListTags('joomla', 'joomla-cms');
+		$tags = $github->repositories->getListTags($config['github']['user'], $config['github']['repo']);
 
 		var_dump($tags);die;
 	}

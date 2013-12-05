@@ -10,4 +10,10 @@ return [
 		'prefix' => 'jos_',
 		'driver' => 'mysqli'
 	],
+	'github' => [
+		'username' => null,
+		'password' => null,
+		'user' => 'joomla',
+		'repo' => 'joomla-cms'
+	]
 ];
