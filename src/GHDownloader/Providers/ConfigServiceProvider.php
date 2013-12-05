@@ -4,6 +4,7 @@ namespace GHDownloader\Providers;
 
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
+use Joomla\Registry\Registry;
 
 /**
  * Class ConfigServiceProvider
@@ -38,7 +39,7 @@ class ConfigServiceProvider implements ServiceProviderInterface
 			"config",
 			function () use ($container)
 			{
-			  return include $this->path;
+				return new Registry(include $this->path);
 			}
 		);
 	}
